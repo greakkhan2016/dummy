@@ -3,7 +3,6 @@ import React, { useCallback, useEffect } from 'react';
 import 'reactflow/dist/style.css';
 
 const AttackReconstructionCanvas = () => {
-  // const { artifacts, isError, isLoading } = useBehavioralTree(storyID);
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
 
