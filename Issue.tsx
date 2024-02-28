@@ -2,15 +2,6 @@ import React, { useCallback, useEffect } from 'react';
 
 import 'reactflow/dist/style.css';
 
-const nodeShapes = {
-  circle: CircleNode,
-  diamond: DiamondNode,
-  square: SquareNode,
-  roundedRectangle: RoundedRectangleNode,
-  pentagon: PentagonNode,
-  hexagon: HexagonNode,
-};
-
 const AttackReconstructionCanvas = () => {
   // const { artifacts, isError, isLoading } = useBehavioralTree(storyID);
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
@@ -21,13 +12,10 @@ const AttackReconstructionCanvas = () => {
   const onNodeMouseLeave = (event, node) => console.log('stopped node hover', node);
 
   const formatArtifactsForNodes = (artifacts) => {
-    
   };
 
   const formattEdgeForNodes = (lines) => {
-    
   };
-
 
   useEffect(() => {
     setNodes(formatArtifactsForNodes(data.artifacts));
